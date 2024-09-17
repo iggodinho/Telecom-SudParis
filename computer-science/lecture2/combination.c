@@ -44,7 +44,7 @@ int main() {
     scanf("%d", &k);
 
     if (k > n || k <= 0 || n <= 0) {
-        printf("Invalid input: ensure 0 < k <= n.\n");
+        printf("Invalid input: value must be 0 < k <= n.\n");
         return 1;
     }
 

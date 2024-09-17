@@ -1,1 +1,1 @@
-# Telecom-SudParis
+# Computer Science TSP
