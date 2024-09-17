@@ -1,8 +1,8 @@
-# Unix Commands for Practice1 Directory Setup
+# Computer Science - Lecture 1 (10/09/2024)
 
-This README file explains the steps performed to set up the `practice1` directory and its subdirectories using Unix commands. Follow the instructions to understand each command's purpose.
+This README file 
 
-## Steps Performed
+## Exercises 1
 
 ### 1. Create the Main Directory `practice1`
 
