@@ -1,0 +1,9 @@
+n = 10, k = 3, Combinations = 120, Time = 0.000006 seconds
+n = 10, k = 5, Combinations = 252, Time = 0.000009 seconds
+n = 10, k = 9, Combinations = 10, Time = 0.000002 seconds
+n = 25, k = 3, Combinations = 2300, Time = 0.000045 seconds
+n = 25, k = 5, Combinations = 53130, Time = 0.001017 seconds
+n = 25, k = 9, Combinations = 2042975, Time = 0.042461 seconds
+n = 50, k = 3, Combinations = 19600, Time = 0.000320 seconds
+n = 50, k = 5, Combinations = 2118760, Time = 0.038030 seconds
+n = 50, k = 9, Combinations = -1789533596, Time = 37.890150 seconds
