@@ -13,8 +13,6 @@ int is_sorted(int *array, unsigned int length) {
     return 1;  // Return 1 (true) if the array is sorted
 }
 
-
-
 void bubble_sort(int *array, unsigned int length) {
     for (unsigned int i = 0; i < length - 1; i++) {
         for (unsigned int j = 0; j < length - i - 1; j++) {
@@ -25,9 +23,9 @@ void bubble_sort(int *array, unsigned int length) {
             }
         }
     }
-    if (!is_sorted(array, length)) {
+    /*if (!is_sorted(array, length)) {
         printf("Bubble Sort - Array is NOT sorted!\n");
-    }
+    }*/ //uncomment for debugging
 }
 
 void insertion_sort(int *array, unsigned int length) {
@@ -40,9 +38,9 @@ void insertion_sort(int *array, unsigned int length) {
         }
         array[j + 1] = key;
     }
-    if (!is_sorted(array, length)) {
+    /*if (!is_sorted(array, length)) {
         printf("Insertion Sort - Array is NOT sorted!\n");
-    }
+    }*/ //uncomment for debugging
 }
 
 void selection_sort(int *array, unsigned int length) {
@@ -57,18 +55,18 @@ void selection_sort(int *array, unsigned int length) {
         array[min_index] = array[i];
         array[i] = temp;
     }
-    if (!is_sorted(array, length)) {
+    /*if (!is_sorted(array, length)) {
         printf("Selection Sort - Array is NOT sorted!\n");
-    }
+    }*/ //uncomment for debugging
 }
 
-void randfill(int *array, unsigned int length) {
+void rand_fill(int *array, unsigned int length) {
     for (unsigned int i = 0; i < length; i++) {
         array[i] = rand() % 100;  
     }
 }
 
-void reversefill(int *array, unsigned int length) {
+void reverse_fill(int *array, unsigned int length) {
     for (unsigned int i = 0; i < length; i++) {
         array[i] = length - i - 1;  // Fill in reverse order
     }
@@ -83,9 +81,9 @@ double time_sort(void (*sort_func)(int*, unsigned int), int *array, unsigned int
 }
 
 void test_sorts(unsigned int length) {
-    FILE *file = fopen("sort_results.txt", "a");  // Abre o arquivo em modo de escrita (append)
+    FILE *file = fopen("sort_results.txt", "a");  // open file in write mode
     if (file == NULL) {
-        printf("Erro ao abrir o arquivo!\n");
+        printf("Error when opening the file!\n");
         exit(1);
     }
 
@@ -105,7 +103,7 @@ void test_sorts(unsigned int length) {
     for (int i = 0; i < 5; i++) {  // Perform 5 samples for each sorting algorithm
 
         // Test on random data
-        randfill(array, length);
+        rand_fill(array, length);
         memcpy(copy, array, length * sizeof(int));  // Copy the original array
         avg_time_bubble_rand += time_sort(bubble_sort, copy, length);
 
@@ -116,7 +114,7 @@ void test_sorts(unsigned int length) {
         avg_time_selection_rand += time_sort(selection_sort, copy, length);
 
         // Test on reverse sorted data
-        reversefill(array, length);
+        reverse_fill(array, length);
         memcpy(copy, array, length * sizeof(int));  // Copy the reverse array
 
         avg_time_bubble_reverse += time_sort(bubble_sort, copy, length);
@@ -129,12 +127,12 @@ void test_sorts(unsigned int length) {
     }
 
     fprintf(file, "Array size: %u\n", length);
-    fprintf(file, "Average time for Bubble Sort (random): %.5f seconds\n", avg_time_bubble_rand / 5);
-    fprintf(file, "Average time for Insertion Sort (random): %.5f seconds\n", avg_time_insertion_rand / 5);
-    fprintf(file, "Average time for Selection Sort (random): %.5f seconds\n", avg_time_selection_rand / 5);
-    fprintf(file, "Average time for Bubble Sort (reverse): %.5f seconds\n", avg_time_bubble_reverse / 5);
-    fprintf(file, "Average time for Insertion Sort (reverse): %.5f seconds\n", avg_time_insertion_reverse / 5);
-    fprintf(file, "Average time for Selection Sort (reverse): %.5f seconds\n", avg_time_selection_reverse / 5);
+    fprintf(file, "Average time for Bubble Sort (random): %.6f seconds\n", avg_time_bubble_rand / 5);
+    fprintf(file, "Average time for Insertion Sort (random): %.6f seconds\n", avg_time_insertion_rand / 5);
+    fprintf(file, "Average time for Selection Sort (random): %.6f seconds\n", avg_time_selection_rand / 5);
+    fprintf(file, "Average time for Bubble Sort (reverse): %.6f seconds\n", avg_time_bubble_reverse / 5);
+    fprintf(file, "Average time for Insertion Sort (reverse): %.6f seconds\n", avg_time_insertion_reverse / 5);
+    fprintf(file, "Average time for Selection Sort (reverse): %.6f seconds\n", avg_time_selection_reverse / 5);
     fprintf(file, "\n");
 
     free(array);  // Deallocate memory

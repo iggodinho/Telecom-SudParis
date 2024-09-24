@@ -78,3 +78,43 @@ Average time for Bubble Sort (reverse): 4.49747 seconds
 Average time for Insertion Sort (reverse): 2.97849 seconds
 Average time for Selection Sort (reverse): 2.57638 seconds
 
+Array size: 10
+Average time for Bubble Sort (random): 0.000002 seconds
+Average time for Insertion Sort (random): 0.000001 seconds
+Average time for Selection Sort (random): 0.000002 seconds
+Average time for Bubble Sort (reverse): 0.000001 seconds
+Average time for Insertion Sort (reverse): 0.000001 seconds
+Average time for Selection Sort (reverse): 0.000001 seconds
+
+Array size: 100
+Average time for Bubble Sort (random): 0.000069 seconds
+Average time for Insertion Sort (random): 0.000024 seconds
+Average time for Selection Sort (random): 0.000046 seconds
+Average time for Bubble Sort (reverse): 0.000058 seconds
+Average time for Insertion Sort (reverse): 0.000039 seconds
+Average time for Selection Sort (reverse): 0.000039 seconds
+
+Array size: 1000
+Average time for Bubble Sort (random): 0.005117 seconds
+Average time for Insertion Sort (random): 0.001943 seconds
+Average time for Selection Sort (random): 0.003562 seconds
+Average time for Bubble Sort (reverse): 0.006193 seconds
+Average time for Insertion Sort (reverse): 0.003766 seconds
+Average time for Selection Sort (reverse): 0.003198 seconds
+
+Array size: 10000
+Average time for Bubble Sort (random): 0.462202 seconds
+Average time for Insertion Sort (random): 0.177783 seconds
+Average time for Selection Sort (random): 0.332333 seconds
+Average time for Bubble Sort (reverse): 0.517360 seconds
+Average time for Insertion Sort (reverse): 0.340007 seconds
+Average time for Selection Sort (reverse): 0.293755 seconds
+
+Array size: 30000
+Average time for Bubble Sort (random): 6.249464 seconds
+Average time for Insertion Sort (random): 1.595362 seconds
+Average time for Selection Sort (random): 2.915881 seconds
+Average time for Bubble Sort (reverse): 4.803683 seconds
+Average time for Insertion Sort (reverse): 3.115459 seconds
+Average time for Selection Sort (reverse): 2.697552 seconds
+
