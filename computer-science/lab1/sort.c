@@ -81,7 +81,7 @@ double time_sort(void (*sort_func)(int*, unsigned int), int *array, unsigned int
 }
 
 void test_sorts(unsigned int length) {
-    FILE *file = fopen("sort_results.txt", "a");  // open file in write mode
+    FILE *file = fopen("sort_results.txt", "w");  // overwrite text file
     if (file == NULL) {
         printf("Error when opening the file!\n");
         exit(1);
