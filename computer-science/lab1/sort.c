@@ -81,7 +81,7 @@ double time_sort(void (*sort_func)(int*, unsigned int), int *array, unsigned int
 }
 
 void test_sorts(unsigned int length) {
-    FILE *file = fopen("sort_results.txt", "w");  // overwrite text file
+    FILE *file = fopen("sort_results.txt", "a");  // append data on text file
     if (file == NULL) {
         printf("Error when opening the file!\n");
         exit(1);
@@ -140,7 +140,17 @@ void test_sorts(unsigned int length) {
     fclose(file); 
 }
 
+void clear_file(const char *filename) {
+    FILE *file = fopen(filename, "w");  // Open the file in write mode
+    if (file == NULL) {
+        printf("Error opening file: %s\n", filename);
+        return;
+    }
+    fclose(file);  // Close the file immediately
+}
+
 int main() {
+    clear_file("sort_results.txt");
     srand(time(NULL));  // Seed random number generator
 
     // Testing the sorting algorithms with different array sizes
