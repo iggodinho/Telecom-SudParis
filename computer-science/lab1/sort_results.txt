@@ -1,8 +1,40 @@
+Array size: 10
+Average time for Bubble Sort (random): 0.000003 seconds
+Average time for Insertion Sort (random): 0.000002 seconds
+Average time for Selection Sort (random): 0.000003 seconds
+Average time for Bubble Sort (reverse): 0.000002 seconds
+Average time for Insertion Sort (reverse): 0.000002 seconds
+Average time for Selection Sort (reverse): 0.000002 seconds
+
+Array size: 100
+Average time for Bubble Sort (random): 0.000066 seconds
+Average time for Insertion Sort (random): 0.000023 seconds
+Average time for Selection Sort (random): 0.000045 seconds
+Average time for Bubble Sort (reverse): 0.000058 seconds
+Average time for Insertion Sort (reverse): 0.000039 seconds
+Average time for Selection Sort (reverse): 0.000033 seconds
+
+Array size: 1000
+Average time for Bubble Sort (random): 0.004529 seconds
+Average time for Insertion Sort (random): 0.001715 seconds
+Average time for Selection Sort (random): 0.003367 seconds
+Average time for Bubble Sort (reverse): 0.005224 seconds
+Average time for Insertion Sort (reverse): 0.003413 seconds
+Average time for Selection Sort (reverse): 0.002964 seconds
+
+Array size: 10000
+Average time for Bubble Sort (random): 0.434661 seconds
+Average time for Insertion Sort (random): 0.165902 seconds
+Average time for Selection Sort (random): 0.323258 seconds
+Average time for Bubble Sort (reverse): 0.514711 seconds
+Average time for Insertion Sort (reverse): 0.335615 seconds
+Average time for Selection Sort (reverse): 0.278786 seconds
+
 Array size: 30000
-Average time for Bubble Sort (random): 6.016555 seconds
-Average time for Insertion Sort (random): 1.515228 seconds
-Average time for Selection Sort (random): 2.864468 seconds
-Average time for Bubble Sort (reverse): 4.558122 seconds
-Average time for Insertion Sort (reverse): 2.998721 seconds
-Average time for Selection Sort (reverse): 2.587248 seconds
+Average time for Bubble Sort (random): 5.654751 seconds
+Average time for Insertion Sort (random): 1.400308 seconds
+Average time for Selection Sort (random): 2.728557 seconds
+Average time for Bubble Sort (reverse): 4.329768 seconds
+Average time for Insertion Sort (reverse): 2.871088 seconds
+Average time for Selection Sort (reverse): 2.479673 seconds
 
